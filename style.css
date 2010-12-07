@@ -1,0 +1,7196 @@
+/*
+
+
+
+Theme Name: The Inertia
+
+
+
+Theme URI: http://theinertia.com
+
+
+
+Description: The theme for theinertia.com
+
+
+
+Author: Ross Pfahler
+
+
+
+Version: 1.0
+
+
+
+Tags: sexy
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+/* Reset default browser CSS.
+
+
+
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+html, body, div, span, applet, object, iframe,
+
+
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+
+
+a, abbr, acronym, address, big, cite, code,
+
+
+
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+
+
+
+small, strike, strong, sub, sup, tt, var,
+
+
+
+b, u, i, center,
+
+
+
+dl, dt, dd, ol, ul, li,
+
+
+
+fieldset, form, label, legend,
+
+
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+
+
+
+	margin: 0;
+
+
+
+	padding: 0;
+
+
+
+	border: 0;
+
+
+
+	vertical-align: baseline;
+
+
+
+	background: transparent;
+
+
+
+}
+
+
+
+body {
+
+
+
+	line-height: 1;
+
+
+
+}
+
+
+
+/*
+
+
+
+h1, h2, h3, h4, h5, h6 {
+
+
+
+	font-weight: normal;
+
+
+
+	clear: both;
+
+
+
+}*/
+
+
+
+ol, ul {
+
+
+
+	list-style: none;
+
+
+
+}
+
+
+
+blockquote {
+
+
+
+	quotes: none;
+
+
+
+}
+
+
+
+blockquote:before, blockquote:after {
+
+
+
+	content: '';
+
+
+
+	content: none;
+
+
+
+}
+
+
+
+del {
+
+
+
+	text-decoration: line-through;
+
+
+
+}
+
+
+
+/* tables still need 'cellspacing="0"' in the markup */
+
+
+
+table {
+
+
+
+	border-collapse: collapse;
+
+
+
+	border-spacing: 0;
+
+
+
+}
+
+
+
+a img { border: none; }
+
+
+
+
+
+
+
+/*
+
+
+
+LAYOUT: Two columns
+
+
+
+DESCRIPTION: Two-column fixed layout with one sidebar right of content
+
+
+
+*/
+
+
+
+
+
+
+
+#container {
+
+
+
+	float: left;
+
+
+
+	margin: 0 -240px 0 0;
+
+
+
+	width: 100%;
+
+
+
+}
+
+
+
+#content {
+
+
+
+	margin: 0 280px 0 20px;
+
+
+
+}
+
+
+
+#primary,
+
+
+
+#secondary {
+
+
+
+	float: right;
+
+
+
+	overflow: hidden;
+
+
+
+	width: 220px;
+
+
+
+}
+
+
+
+#secondary {
+
+
+
+	clear: right;
+
+
+
+}
+
+
+
+#footer {
+
+
+
+	clear: both;
+
+
+
+	width: 100%;
+
+
+
+}
+
+
+
+
+
+
+
+/*
+
+
+
+LAYOUT: One column, no sidebar
+
+
+
+DESCRIPTION: One centered column with no sidebar
+
+
+
+*/
+
+
+
+
+
+
+
+.one-column #content {
+
+
+
+	margin: 0 auto;
+
+
+
+	width: 640px;
+
+
+
+}
+
+
+
+
+
+
+
+/*
+
+
+
+LAYOUT: Full width, no sidebar
+
+
+
+DESCRIPTION: Full width content with no sidebar; used for attachment pages
+
+
+
+*/
+
+
+
+
+
+
+
+.single-attachment #content {
+
+
+
+	margin: 0 auto;
+
+
+
+	width: 900px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+LAYOUT: Home page
+
+
+
+DESCRIPTION: Home page styles
+
+
+
+*/
+
+
+
+#cLeftCol {
+
+
+
+	width:343px;
+
+
+
+	float:left;
+
+
+
+}
+
+
+
+
+
+
+
+#cFeaturedTriangle {
+
+
+
+	margin:1px 0 0 162px;
+
+
+
+	width:18px;
+
+
+
+	display:block;
+
+
+
+}
+
+
+
+
+
+
+
+#cFeaturedBody {
+
+
+
+	margin:0 0 10px 0;
+
+
+
+	padding:8px 8px 14px 8px;
+
+
+
+	border:1px solid #dadada;
+
+
+
+	border-top:8px solid #09b1d8
+
+
+
+}
+
+
+
+
+
+
+
+#cFeaturedBody .entry_author_image, #cArticleList .entry_author_image, #cLeftColWide .entry_author_image, #articleAuthor .entry_author_image, .author .entry_author_image {
+
+
+
+	border:1px solid #DADADA;
+
+
+
+	float:left;
+
+
+
+	height:84px;
+
+
+
+	margin:0 7px 0 0;
+
+
+
+	width:84px;		
+
+
+
+}
+
+
+
+
+
+
+
+.author p {
+
+
+
+	font-size:14px
+
+
+
+}
+
+
+
+.author .contentLeft {
+
+	width:91px; float:left;
+
+}
+
+
+
+.author .contentRight {
+
+	width:544px; float:left;	
+
+}
+
+
+
+#cArticleList .entry_author_image {
+
+
+
+	width:80px;
+
+
+
+	height:80px;
+
+
+
+}
+
+
+
+
+
+
+
+#cFeaturedTitle {
+
+
+
+	margin:4px 0 7px 0;
+
+
+
+	font-size:16px
+
+
+
+}
+
+
+
+
+
+
+
+#cFeaturedBody p {
+
+
+
+	font-size:13px;
+
+
+
+	line-height:18px
+
+
+
+}
+
+
+
+
+
+
+
+#cMediaBox {
+
+
+
+	margin:10px 0 0 0;
+
+
+
+	height:236px;
+
+
+
+}
+
+
+
+	
+
+
+
+#cMediaOverlay {
+
+
+
+	padding:1px 5px 0 5px;
+
+
+
+	width:310px;
+
+
+
+	height:25px;
+
+
+
+	position:relative;
+
+
+
+	top:-30px;
+
+
+
+	background:#fff;
+
+
+
+	opacity: .8;
+
+
+
+}
+
+
+
+
+
+
+
+#cMediaOverlay h4 {
+
+
+
+	margin:0;
+
+
+
+	position:relative;
+
+
+
+	top:-5px;
+
+
+
+	left:4px;
+
+
+
+	display:inline;
+
+
+
+	font-weight:500;
+
+
+
+	font-size:14px;
+
+
+
+}
+
+
+
+
+
+
+
+#cMidCol {
+
+
+
+	margin:0 0 0 11px;
+
+
+
+	width:298px;
+
+
+
+	border:1px solid #dadada;
+
+
+
+	float:left;
+
+
+
+}
+
+
+
+
+
+
+
+#cArticleList {
+
+
+
+	margin:0!important;
+
+
+
+	padding:0;
+
+
+
+	list-style:none	
+
+
+
+}
+
+
+
+#cArticleList li {
+
+
+
+	margin:0;
+
+
+
+	padding:8px 10px 0 10px;
+
+
+
+	border-bottom:1px solid #dadada;
+
+
+
+	height:149px
+
+
+
+}
+
+
+
+
+
+
+
+#cArticleList li.last {
+
+
+
+	border:none;	
+
+
+
+}
+
+
+
+
+
+
+
+#cArticleList p {
+
+
+
+	font-size:1.04em;
+
+
+
+	line-height:17px;
+
+
+
+	margin:5px 0 8px 0!important;
+
+	float:left;
+
+	width:278px;
+
+
+
+}
+
+
+
+.cArticleListTitle {
+
+
+
+	margin:3px 0;
+
+
+
+}
+
+
+
+
+
+
+
+/*
+
+
+
+	LAYOUT: article left column
+
+
+
+	DESCRIPTION: the left column for articles
+
+
+
+*/
+
+
+
+
+
+
+
+#cLeftColWide {
+
+
+
+	width:645px;
+
+
+
+	float:left;
+
+
+
+	margin:0 0 0 10px
+
+
+
+}
+
+
+
+#cLeftColGallery {
+
+
+
+	width:962px;
+
+
+
+	float:left;
+
+
+
+	margin:0 10px;
+
+}
+
+
+
+#cLeftColGallery #articleSocialBtns {
+
+	float:right;
+
+}
+
+.ngg-imagebrowser img {
+
+	width:950px!important;
+
+	max-width:950px!important;
+
+}	
+
+
+
+.ngg-imagebrowser-desc {
+
+	clear:both;
+
+	text-align:center;
+
+	position:relative;
+
+	top:-29px	
+
+	
+
+}
+
+#articleAuthor {
+
+
+
+	
+
+
+
+}
+
+
+
+
+
+
+
+#articleAuthorName {
+
+
+
+	font-size:18px;
+
+
+
+	margin:0;
+
+
+
+}	
+
+
+
+
+
+
+
+#articleAuthorName a {
+
+
+
+	color:#888;	
+
+
+
+}
+
+
+
+
+
+
+
+#articleAuthorDesc {
+
+
+
+	font-style:italic;
+
+
+
+	font-size:14px;
+
+
+
+}
+
+
+
+
+
+
+
+#articleAuthorBtns {
+
+
+
+	float:left;
+
+
+
+	width:270px;
+
+
+
+	font-size:11px;
+
+
+
+	font-family:Arial, Helvetica, sans-serif;
+
+
+
+}
+
+
+
+
+
+
+
+#articleAuthorBtns img {
+
+
+
+	vertical-align:middle	
+
+
+
+}
+
+
+
+
+
+
+
+#articleAuthorBtns ul {
+
+
+
+	margin:4px 0 0 0;
+
+
+
+	padding:0;
+
+
+
+	list-style:none
+
+
+
+}
+
+
+
+
+
+
+
+#articleAuthorBtns li {
+
+
+
+	float:left;
+
+
+
+	width:75px;
+
+
+
+	padding:5px 5px 0 0;
+
+	text-align:center
+
+
+
+}
+
+
+
+
+
+
+
+#articleAuthorBtns li a {
+
+
+
+	font-weight:700;
+
+	color:#555;
+
+	font-style:italic;
+
+}
+
+
+
+#articleAuthorBtns li a span {
+
+	margin:2px 0 0 0;
+
+	display:block	
+
+}
+
+
+
+#articleAuthorBtns li a:hover {
+
+
+
+	text-decoration:none
+
+
+
+}	
+
+
+
+#articleSocialBtns {
+
+	float:left;
+
+	width:270px
+
+}
+
+
+
+#articleSocialBtns div {
+
+	float:right;
+
+	width:66px;
+
+	text-align:center
+
+}
+
+
+
+.fb_edge_widget_with_comment{margin-left:10px}
+
+
+
+#articleBody {
+
+
+
+	clear:both;
+
+
+
+	padding:5px 0 0 0;
+
+
+
+}
+
+
+
+#articleBody p {
+
+
+
+	font-size:14px;
+
+
+
+	line-height:21px!important
+
+
+
+}
+
+
+
+#cLeftColWide p {
+
+	font-size: 14px;
+
+	line-height: 17px;	
+
+}
+
+
+
+#articleBody a, #cLeftColWide p a {
+
+
+
+	color:#09B1D8;
+
+
+
+        text-decoration:underline;
+
+
+
+}
+
+
+
+
+
+
+
+#articleTitle {
+
+
+
+	margin:10px 0;
+
+
+
+	font-size:20px
+
+
+
+}
+
+
+
+
+
+
+
+/*
+
+
+
+	LAYOUT: right column
+
+
+
+	DESCRIPTION: contains right columns (and prob some widget code)
+
+
+
+*/
+
+
+
+				
+
+
+
+#cRightCol {
+
+
+
+	margin: 0 0 0 11px;
+
+
+
+	width:316px;
+
+
+
+	float:left
+
+
+
+}
+
+
+
+
+
+
+
+.cAdInner {
+
+
+
+	width:300px;
+
+
+
+	height:250px;
+
+
+
+	float:left;
+
+
+
+}
+
+
+
+.cAdInnerTall {
+
+	width:300px;
+
+	height:250px;
+
+	float:left;
+
+}
+
+
+
+#cJoinTop {
+
+
+
+	padding-top:0	
+
+
+
+}
+
+
+
+
+
+
+
+#cJoinTopInner {
+
+
+
+	width:300px;
+
+
+
+	height:131px;
+
+
+
+	background:#fff;
+
+
+
+}
+
+
+
+
+
+
+
+#cJoinTopInner strong, #cJoinBottom strong{
+
+
+
+	margin:0 15px;
+
+
+
+	padding:11px 0;
+
+
+
+	display:block;
+
+
+
+	border-top:1px solid #bababa;
+
+
+
+	color:#222;
+
+
+
+	line-height:18px;
+
+
+
+	font-size:13px
+
+
+
+}
+
+
+
+
+
+
+
+.lrgBlue, .lrgBlue a {
+
+
+
+	display:block;
+
+
+
+	font-size:35px;
+
+
+
+	line-height:41px;
+
+
+
+	font-weight:700;
+
+
+
+	color:#09b1d8!important;
+
+
+
+	text-align:center;
+
+
+
+	padding: 6px 0px 8px 0;
+
+
+
+}
+
+
+
+
+
+
+
+.lrgBlueAlt, .lrgBlueAlt a  {
+
+
+
+	display:block;
+
+
+
+	font-size:35px;
+
+
+
+	line-height:41px;
+
+
+
+	font-weight:700;
+
+
+
+	color:#09b1d8!important;
+
+
+
+	text-align:center;
+
+
+
+	padding:0 0 6px 0;
+
+
+
+}
+
+
+
+.newsletter-signup {
+
+	margin:15px 0;	
+
+}
+
+
+
+#cJoinBottom {
+
+
+
+	margin:0 0 10px 0;
+
+
+
+}
+
+
+
+
+
+
+
+#cJoinBottomInner, .innerDefault {
+
+
+
+	padding:13px 0;
+
+
+
+	width:300px;
+
+
+
+	height:80px;
+
+
+
+	background:#fff;
+
+
+
+}
+
+
+
+.innerDefault {
+
+	height:auto	
+
+}
+
+
+
+
+
+#cJoinBottomInner .textInput{
+
+
+
+	margin:0 0 10px 0;
+
+
+
+	padding:4px 0 0 1px;
+
+
+
+	border:1px solid #bababa;
+
+
+
+	width:277px;
+
+
+
+	height:16px;
+
+
+
+	color:#bbb;
+
+
+
+	font-size:11px;
+
+
+
+}
+
+
+
+
+
+
+
+#cJoinBottomInner .textSubmit {
+
+
+
+	width:45px;
+
+
+
+	float:right;
+
+
+
+}
+
+
+
+
+
+
+
+.cRandomContent {
+
+
+
+	margin: 10px 0px 0px;
+
+
+
+}
+
+
+
+
+
+
+
+.cRandomContent img {
+
+
+
+	width:300px;
+
+
+
+	vertical-align:middle;
+
+
+
+}
+
+
+
+
+
+
+
+#cAdWide {
+
+
+
+	margin:0 0 15px 0!important;
+
+
+
+	width:982px;
+
+
+
+	height:90px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+#cLowerLeftCol {
+
+
+
+	margin:0 11px 0 0;
+
+
+
+	width:320px;
+
+
+
+	height:255px;
+
+
+
+	float:left;
+
+
+
+}
+
+
+
+
+
+
+
+#cLowerLeftColInner {
+
+
+
+	padding:5px;
+
+
+
+	width:310px;
+
+
+
+	background:#fff;
+
+	height:240px
+
+
+
+}
+
+
+
+
+
+
+
+#mostPopular {
+
+
+
+	margin:0;
+
+
+
+	padding:0 0 0 30px;
+
+
+
+}
+
+
+
+
+
+
+
+#mostPopular li {
+
+
+
+	margin:5px 0 7px 0;	
+
+
+
+}
+
+
+
+
+
+
+
+#cLowerMidCol {
+
+
+
+	margin:0 10px;
+
+
+
+	width:300px;
+
+
+
+	height:250px;
+
+
+
+	float:left;
+
+
+
+}
+
+
+
+
+
+
+
+.cLowerRightCol, .cLowerRightColAlt {
+
+
+
+	margin:0 0 0 11px;
+
+
+
+	display:inline;
+
+
+
+	width:300px;
+
+
+
+	height:255px;
+
+
+
+	float:left;
+
+
+
+}
+
+
+
+.cLowerRightColAlt {
+
+	height:auto;
+
+	margin:0;
+
+	clear:both
+
+}
+
+
+
+.recentComments {
+
+	margin:10px 0;	
+
+}
+
+
+
+.cLowerRightColInner {
+
+
+
+	margin:0;
+
+
+
+	padding:5px;
+
+
+
+	width:290px;
+
+
+
+	background:#fff;
+
+
+
+}
+
+
+
+.cLowerRightColAlt .cLowerRightColInner {
+
+	width:290px;	
+
+}
+
+
+
+.quoteBody {
+
+
+
+	padding:10px;
+
+
+
+	display:block;
+
+
+
+	font-size:16px;
+
+
+
+	line-height:23px;
+
+
+
+}
+
+
+
+
+
+
+
+.quoteAuthor {
+
+
+
+	padding:12px;
+
+
+
+	display:block;
+
+
+
+	font-weight:700;
+
+
+
+	text-align:right;
+
+
+
+	font-size:18px;
+
+
+
+}
+
+
+
+
+
+
+
+#cDirectory {
+
+
+
+	margin:10px 0;
+
+
+
+	border-top:3px solid #000;
+
+
+
+}
+
+
+
+
+
+
+
+#cDirectoryTitle {
+
+
+
+	padding:0 0 0 10px;
+
+
+
+	width:140px;
+
+
+
+	height:16px;
+
+
+
+	display:block;
+
+
+
+	background:#000;
+
+
+
+	color:#fff;
+
+
+
+	font-weight:700
+
+
+
+}
+
+
+
+
+
+
+
+#cDirectory ul {
+
+
+
+	margin:10px 10px;
+
+
+
+	padding:0 70px 0 0;
+
+
+
+	float:left;
+
+
+
+	width:120px;
+
+
+
+	list-style:none;
+
+
+
+	font-size:11px;
+
+
+
+}
+
+
+
+
+
+
+
+#cDirectory ul.last {
+
+
+
+	margin-right:0;
+
+
+
+	padding-right:0;
+
+
+
+}
+
+
+
+
+
+
+
+#cDirectory li {
+
+
+
+	margin-bottom:10px;
+
+
+
+}
+
+
+
+
+
+
+
+#cDirectory li a {
+
+
+
+	color:#bbb;	
+
+
+
+}
+
+
+
+#socialBtnsAbs {
+
+	position:absolute;
+
+	width:22px;
+
+	left:1000px;
+
+	height:65px;
+
+	background:#dadada;
+
+}
+
+
+
+#socialBtnsAbs ul {
+
+	list-style:none;	
+
+	padding:3px;
+
+	margin:0;
+
+}
+
+
+
+#socialBtnsAbs li {
+
+	margin:0;
+
+	padding:0;
+
+}
+
+
+
+
+
+/* =Fonts
+
+
+
+-------------------------------------------------------------- */
+
+
+
+body,
+
+
+
+input,
+
+
+
+textarea,
+
+
+
+.page-title,
+
+
+
+.pingback a.url {
+
+
+
+	font-family: Georgia, "Times New Roman", Times, serif;
+
+
+
+}
+
+
+
+
+
+
+
+h3#comments-title,
+
+
+
+h3#reply-title,
+
+
+
+#cancel-comment-reply-link,
+
+
+
+.form-allowed-tags,
+
+
+
+#wp-calendar,
+
+
+
+.comment-meta,
+
+
+
+.comment-body tr th,
+
+
+
+.comment-body thead th,
+
+
+
+.entry-content label,
+
+
+
+.entry-content tr th,
+
+
+
+.entry-content thead th,
+
+
+
+.entry-meta,
+
+
+
+.entry-utility,
+
+
+
+#respond label,
+
+
+
+.navigation,
+
+
+
+.pingback p,
+
+
+
+.reply,
+
+
+
+.widget-title,
+
+
+
+.wp-caption-text,
+
+
+
+input[type=submit]
+
+
+
+{
+
+
+
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
+
+
+
+}
+
+
+
+pre {
+
+
+
+	font-family: "Courier 10 Pitch", Courier, monospace;
+
+
+
+}
+
+
+
+code {
+
+
+
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =Structure
+
+
+
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* The main theme structure */
+
+
+
+#main {
+
+
+
+	width: 982px;
+
+
+
+}
+
+
+
+#wrapper {
+
+
+
+	margin:0 auto 5px auto;
+
+
+
+	padding:11px 9px;
+
+
+
+	width:982px;
+
+
+
+	border:1px solid #DADADA;
+
+
+
+	border-top:none
+
+
+
+	
+
+
+
+}
+
+
+
+
+
+
+
+/* Structure the footer area */
+
+
+
+#footer-widget-area {
+
+
+
+	overflow: hidden;
+
+
+
+}
+
+
+
+#footer-widget-area .widget-area {
+
+
+
+	float: left;
+
+
+
+}
+
+
+
+
+
+
+
+/* =Global Elements
+
+
+
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* Main global 'theme' and typographic styles  */
+
+
+
+body {
+
+
+
+	background: #fff;
+
+
+
+}
+
+
+
+
+
+
+
+body,
+
+
+
+input,
+
+
+
+textarea {
+
+
+
+	color: #666;
+
+
+
+	font-size: 12px;
+
+
+
+	line-height: 18px;
+
+
+
+}
+
+
+
+hr {
+
+
+
+	background-color: #E7E7E7;
+
+
+
+	border:0;
+
+
+
+	height: 1px;
+
+
+
+	margin-bottom: 18px;
+
+
+
+	clear:both;
+
+
+
+}
+
+
+
+
+
+
+
+/* Text elements */
+
+
+
+p {
+
+
+
+	margin-bottom: 18px;
+
+
+
+}
+
+
+
+ul {
+
+
+
+	list-style: square;
+
+
+
+	margin: 0 0 18px 1.5em;
+
+
+
+}
+
+
+
+ol {
+
+
+
+	list-style: decimal;
+
+
+
+	margin: 0 0 18px 1.5em;
+
+
+
+}
+
+
+
+ol ol {
+
+
+
+	list-style:upper-alpha;
+
+
+
+}
+
+
+
+ol ol ol {
+
+
+
+	list-style:lower-roman;
+
+
+
+}
+
+
+
+ol ol ol ol {
+
+
+
+	list-style:lower-alpha;
+
+
+
+}
+
+
+
+ul ul,
+
+
+
+ol ol,
+
+
+
+ul ol,
+
+
+
+ol ul {
+
+
+
+	margin-bottom:0;
+
+
+
+}
+
+
+
+dl {
+
+
+
+	margin:0 0 24px 0;
+
+
+
+}
+
+
+
+dt {
+
+
+
+	font-weight: bold;
+
+
+
+}
+
+
+
+dd {
+
+
+
+	margin-bottom: 18px;
+
+
+
+}
+
+
+
+strong {
+
+
+
+	font-weight: bold;
+
+
+
+}
+
+
+
+cite,
+
+
+
+em,
+
+
+
+i {
+
+
+
+	font-style: italic;
+
+
+
+}
+
+
+
+big {
+
+
+
+	font-size: 131.25%;
+
+
+
+}
+
+
+
+ins {
+
+
+
+	background: #ffc;
+
+
+
+	text-decoration: none;
+
+
+
+}
+
+
+
+blockquote {
+
+
+
+	font-style: italic;
+
+
+
+	padding: 0 3em;
+
+
+
+}
+
+
+
+blockquote cite,
+
+
+
+blockquote em,
+
+
+
+blockquote i {
+
+
+
+	font-style: normal;
+
+
+
+}
+
+
+
+pre {
+
+
+
+	background: #f7f7f7;
+
+
+
+	color: #222;
+
+
+
+	line-height: 18px;
+
+
+
+	margin-bottom: 18px;
+
+
+
+	padding: 1.5em;
+
+
+
+}
+
+
+
+abbr,
+
+
+
+acronym {
+
+
+
+	border-bottom: 1px dotted #666;
+
+
+
+	cursor: help;
+
+
+
+}
+
+
+
+
+
+
+
+sup,
+
+
+
+sub {
+
+
+
+	height: 0;
+
+
+
+	line-height: 1;
+
+
+
+	vertical-align: baseline;
+
+
+
+	position: relative;
+
+
+
+}
+
+
+
+sup {
+
+
+
+	bottom: 1ex;
+
+
+
+}
+
+
+
+sub {
+
+
+
+	top: .5ex;
+
+
+
+}
+
+
+
+input[type="text"],
+
+
+
+textarea {
+
+
+
+	padding: 2px;
+
+
+
+	background: #f9f9f9;
+
+
+
+	border: 1px solid #ccc;
+
+
+
+}
+
+
+
+a:link {
+
+
+
+	color:#000;
+
+
+
+	text-decoration:none
+
+
+
+}
+
+
+
+a:visited {
+
+
+
+	color:#000;
+
+
+
+	text-decoration:none
+
+
+
+}
+
+
+
+a:active,
+
+
+
+a:hover {
+
+
+
+	color: #000;
+
+
+
+	text-decoration:underline;
+
+
+
+}
+
+
+
+
+
+
+
+/* Text meant only for screen readers */
+
+
+
+.screen-reader-text {
+
+
+
+	position: absolute;
+
+
+
+	left: -9000px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =Header
+
+
+
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+#header {
+
+
+
+	border-bottom:10px solid #000;
+
+	position:relative;
+
+}
+
+
+
+
+
+
+
+#hSpacerA {
+
+
+
+	width:655px;
+
+
+
+	height:20px;
+
+
+
+	float:left
+
+
+
+}
+
+
+
+
+
+
+
+#hSearch {
+
+
+
+	margin:0 0 0 11px;
+
+
+
+	padding:0;
+
+
+
+	width:314px;
+
+
+
+	height:18px;		
+
+
+
+	border:1px solid #dadada;
+
+
+
+	float:left;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+#hSearch #searchTerms{
+
+
+
+	padding:0;
+
+
+
+	margin:0;	
+
+
+
+	color:#dadada;
+
+
+
+	border: none;
+
+
+
+	width:293px;
+
+
+
+	text-align:right;
+
+
+
+	font-size:11px;
+
+
+
+	background:none;
+
+
+
+	height:18px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+#hSearch .selected {
+
+
+
+	color:#444!important;
+
+
+
+	font-style:normal!important;
+
+
+
+	text-align:left!important
+
+
+
+}
+
+
+
+
+
+
+
+#hSearch #searchImage {
+
+
+
+	position:relative;
+
+
+
+	top:2px;
+
+
+
+	left:6px
+
+
+
+}
+
+
+
+
+
+
+
+#logo {
+
+
+
+	margin:9px 0 11px 0;
+
+
+
+	padding:25px 0 0 0;
+
+
+
+	width:254px;
+
+
+
+	height:65px;
+
+
+
+	text-align:center;
+
+
+
+	float:left
+
+
+
+}
+
+
+
+
+
+
+
+#hAd {
+
+
+
+	margin:9px 0 11px 0;
+
+
+
+	width:728px;
+
+
+
+	height:90px;
+
+
+
+	float:left
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =Menu
+
+
+
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+#nav {
+
+
+
+	padding:0;
+
+
+
+	list-style:none;
+
+
+
+	background:#09b1d8;
+
+
+
+	width:982px;
+
+
+
+	height:22px;
+
+
+
+	margin:0 0 11px 0;
+
+
+
+	text-transform:uppercase;
+
+
+
+}
+
+
+
+
+
+
+
+#nav ul {
+
+
+
+	margin:0;
+
+
+
+	padding:0;
+
+
+
+}
+
+
+
+
+
+
+
+#nav li {
+
+
+
+	margin:0;
+
+
+
+	display:inline;
+
+
+
+	padding:3px 15px 1px 15px;
+
+
+
+	float:left;
+
+
+
+}
+
+
+
+
+
+
+
+#nav li a {
+
+
+
+	color:#fff;
+
+
+
+	font-weight:700;
+
+
+
+	font-style:italic;
+
+
+
+	font-family:"Times New Roman", Times, serif;
+
+
+
+	font-size:14px;
+
+
+
+}
+
+
+
+
+
+
+
+#nav li:hover a {
+
+
+
+	text-decoration:none	
+
+
+
+}
+
+
+
+
+
+
+
+#nav li:hover {
+
+
+
+	background:#000;	
+
+
+
+}
+
+
+
+
+
+
+
+/* =Content
+
+
+
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+#main {
+
+
+
+	overflow: hidden;
+
+
+
+}
+
+
+
+#content {
+
+
+
+	margin:11px 0;
+
+
+
+}
+
+
+
+#content,
+
+
+
+#content input,
+
+
+
+#content textarea {
+
+
+
+	color: #222;
+
+
+
+	line-height: 17px;
+
+
+
+}
+
+
+
+#content p,
+
+
+
+#content ul,
+
+
+
+#content ol,
+
+
+
+#content dd,
+
+
+
+#content pre,
+
+
+
+#content hr {
+
+
+
+	margin-bottom:24px;
+
+
+
+}
+
+
+
+
+
+
+
+#content ul ul,
+
+
+
+#content ol ol,
+
+
+
+#content ul ol,
+
+
+
+#content ol ul {
+
+
+
+	margin-bottom:0;
+
+
+
+}
+
+
+
+#content pre,
+
+
+
+#content kbd,
+
+
+
+#content tt,
+
+
+
+#content var {
+
+
+
+	font-size: 15px;
+
+
+
+	line-height: 21px;
+
+
+
+}
+
+
+
+#content code {
+
+
+
+	font-size: 13px;
+
+
+
+}
+
+
+
+#content dt,
+
+
+
+#content th {
+
+
+
+	color: #000;
+
+
+
+}
+
+
+
+/*
+
+
+
+#content h1,
+
+
+
+#content h2,
+
+
+
+#content h3,
+
+
+
+#content h4,
+
+
+
+#content h5,
+
+
+
+#content h6 {
+
+
+
+	color: #000;
+
+
+
+	margin: 0 0 20px 0;
+
+
+
+	line-height: 1.5em;
+
+
+
+}*/
+
+
+
+#content .post { clear:both}
+
+
+
+#content .post .contentLeft {
+
+
+
+	width:300px; float:left;
+
+
+
+	margin:0 15px 0 0;
+
+
+
+	padding:0 0 20px 0;
+
+
+
+}
+
+
+
+
+
+
+
+#content .post .contentRight {
+
+
+
+	width:320px; float:left;
+
+
+
+}
+
+
+
+
+
+
+
+#content .post .contentRight p {
+
+
+
+	font-size:14px
+
+
+
+}
+
+
+
+
+
+
+
+#content table {
+
+
+
+	border: 1px solid #e7e7e7;
+
+
+
+	text-align: left;
+
+
+
+	margin: 0 -1px 24px 0;
+
+
+
+	width: 100%;
+
+
+
+}
+
+
+
+#content tr th,
+
+
+
+#content thead th {
+
+
+
+	color: #888;
+
+
+
+	font-size: 12px;
+
+
+
+	font-weight: bold;
+
+
+
+	line-height: 18px;
+
+
+
+	padding: 9px 24px;
+
+
+
+}
+
+
+
+#content tr td {
+
+
+
+	border-top: 1px solid #e7e7e7;
+
+
+
+	padding: 6px 24px;
+
+
+
+}
+
+
+
+#content tr.odd td {
+
+
+
+	background: #F2F7FC;
+
+
+
+}
+
+
+
+.hentry {
+
+
+
+	margin: 0 10px 25px 0;
+
+
+
+}
+
+
+
+.hentry img {
+
+
+
+	max-width:635px	
+
+
+
+}
+
+
+
+
+
+
+
+.home .sticky {
+
+
+
+	background: #F2F7FC;
+
+
+
+	border-top: 4px solid #000;
+
+
+
+	padding: 18px 20px;
+
+
+
+	margin-left: -20px;
+
+
+
+	margin-right: -20px;
+
+
+
+}
+
+
+
+.single .hentry {
+
+
+
+	margin: 0 0 36px 0;
+
+
+
+}
+
+
+
+.page-title {
+
+
+
+	color: #000;
+
+
+
+	font-size: 28px;
+
+
+
+	font-weight: bold;
+
+
+
+	margin: 10px 0 36px 0;
+
+
+
+}
+
+
+
+.page-title span {
+
+
+
+	color: #333;
+
+
+
+	font-size: 16px;
+
+
+
+	font-style: italic;
+
+
+
+	font-weight: normal;
+
+
+
+}
+
+
+
+.page-title a:link,
+
+
+
+.page-title a:visited {
+
+
+
+	color:#888;
+
+
+
+	text-decoration: none;
+
+
+
+}
+
+
+
+.page-title a:active,
+
+
+
+.page-title a:hover {
+
+
+
+	color: #000;
+
+
+
+}
+
+
+
+#content .entry-title {
+
+
+
+	color: #000;
+
+
+
+	font-size: 21px;
+
+
+
+	line-height: 1.3em;
+
+
+
+	font-weight: bold;
+
+
+
+	margin-bottom: 0;
+
+
+
+	margin-top:10px
+
+
+
+}
+
+
+
+.entry-title a:link,
+
+
+
+.entry-title a:visited {
+
+
+
+	color:#000;
+
+
+
+	text-decoration: none;
+
+
+
+}
+
+
+
+
+
+
+
+.entry-meta {
+
+
+
+	color: #888;
+
+
+
+	font-size: 12px;
+
+
+
+}
+
+
+
+.entry-meta abbr,
+
+
+
+.entry-utility abbr {
+
+
+
+	border: none;
+
+
+
+}
+
+
+
+.entry-meta abbr:hover,
+
+
+
+.entry-utility abbr:hover {
+
+
+
+	border-bottom: 1px dotted #666;
+
+
+
+}
+
+
+
+.entry-content,
+
+
+
+.entry-summary {
+
+
+
+	clear: both;
+
+
+
+	padding: 12px 0 0 0;
+
+
+
+}
+
+
+
+#content .entry-summary p:last-child {
+
+
+
+	margin-bottom: 12px;
+
+
+
+}
+
+
+
+.entry-content fieldset {
+
+
+
+	border: 1px solid #E7E7E7;
+
+
+
+	margin: 0 0 24px 0;
+
+
+
+	padding: 24px;
+
+
+
+}
+
+
+
+.entry-content fieldset legend {
+
+
+
+	background: #fff;
+
+
+
+	color: #000;
+
+
+
+	font-weight: bold;
+
+
+
+	padding: 0 24px;
+
+
+
+}
+
+
+
+.entry-content input {
+
+
+
+	margin: 0 0 24px 0;
+
+
+
+}
+
+
+
+.entry-content input.file,
+
+
+
+.entry-content input.button {
+
+
+
+	margin-right: 24px;
+
+
+
+}
+
+
+
+.entry-content label {
+
+
+
+	color: #888;
+
+
+
+	font-size: 12px;
+
+
+
+}
+
+
+
+.entry-content select {
+
+
+
+	margin: 0 0 24px 0;
+
+
+
+}
+
+
+
+.entry-content sup,
+
+
+
+.entry-content sub {
+
+
+
+	font-size: 10px;
+
+
+
+}
+
+
+
+.entry-content blockquote.left {
+
+
+
+	float: left;
+
+
+
+	margin-left: 0;
+
+
+
+	margin-right: 24px;
+
+
+
+	text-align: right;
+
+
+
+	width: 33%;
+
+
+
+}
+
+
+
+.entry-content blockquote.right {
+
+
+
+	float: right;
+
+
+
+	margin-left: 24px;
+
+
+
+	margin-right: 0;
+
+
+
+	text-align: left;
+
+
+
+	width: 33%;
+
+
+
+}
+
+
+
+.page-link {
+
+
+
+	color: #000;
+
+
+
+	font-weight:bold;
+
+
+
+	margin:0 0 40px 0;
+
+
+
+	word-spacing:0.5em;
+
+
+
+}
+
+
+
+.page-link a:link,
+
+
+
+.page-link a:visited {
+
+
+
+	background: #f1f1f1;
+
+
+
+	color:#333;
+
+
+
+	font-weight:normal;
+
+
+
+	padding:0.5em 0.75em;
+
+
+
+	text-decoration:none;
+
+
+
+}
+
+
+
+.home .sticky .page-link a {
+
+
+
+	background: #D9E8F7;
+
+
+
+}
+
+
+
+.page-link a:active,
+
+
+
+.page-link a:hover {
+
+
+
+	color: #000;
+
+
+
+}
+
+
+
+.page .edit-link {
+
+
+
+	clear: both;
+
+
+
+	display: block;
+
+
+
+}
+
+
+
+.entry-utility {
+
+
+
+	color: #888;
+
+
+
+	font-size: 12px;
+
+
+
+	line-height: 18px;
+
+
+
+	clear: both;
+
+
+
+}
+
+
+
+.entry-meta a,
+
+
+
+.entry-utility a {
+
+
+
+	color: #888;
+
+
+
+}
+
+
+
+.entry-meta a:hover,
+
+
+
+.entry-utility a:hover {
+
+
+
+	color: #000;
+
+
+
+}
+
+
+
+#content .video-player {
+
+
+
+	padding: 0;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Asides
+
+
+
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+.home #content .category-asides p {
+
+
+
+	font-size: 14px;
+
+
+
+	line-height: 20px;
+
+
+
+	margin-bottom: 10px;
+
+
+
+	margin-top:0;
+
+
+
+}
+
+
+
+.home .hentry.category-asides {
+
+
+
+	padding: 0;
+
+
+
+}
+
+
+
+.home #content .category-asides .entry-content {
+
+
+
+	padding-top: 0;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Gallery listing
+
+
+
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+.category-gallery {
+
+
+
+	margin-bottom: 48px;
+
+
+
+}
+
+
+
+.category-gallery h2 {
+
+
+
+	margin-top: 10px;
+
+
+
+}
+
+
+
+.category-gallery .entry-meta {
+
+
+
+}
+
+
+
+.category-gallery .size-thumbnail img {
+
+
+
+	border: 10px solid #f1f1f1;
+
+
+
+	margin-bottom: 0;
+
+
+
+}
+
+
+
+.category-gallery .gallery-thumb {
+
+
+
+	float: left;
+
+
+
+	margin-right:20px;
+
+
+
+	margin-top: -4px;
+
+
+
+}
+
+
+
+.home #content .category-gallery .entry-content p {
+
+
+
+	display: inline;
+
+
+
+}
+
+
+
+.home #content .category-gallery .entry-utility {
+
+
+
+	padding-top:4px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Attachment pages
+
+
+
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+.entry-content .attachment img {
+
+
+
+	margin-bottom: 0;
+
+
+
+}
+
+
+
+.attachment .entry-content .entry-caption {
+
+
+
+	font-size: 140%;
+
+
+
+	margin-top: 24px;
+
+
+
+}
+
+
+
+.attachment .entry-content .nav-previous a:before {
+
+
+
+	content: '\2190\00a0';
+
+
+
+}
+
+
+
+.attachment .entry-content .nav-next a:after {
+
+
+
+	content: '\00a0\2192';
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Images
+
+
+
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+#content img {
+
+
+
+	max-width: 627px;
+
+
+
+}
+
+
+
+#content .attachment img {
+
+
+
+	max-width: 900px;
+
+
+
+}
+
+
+
+#content .alignleft,
+
+
+
+#content img.alignleft {
+
+
+
+	display: inline;
+
+
+
+	float: left;
+
+
+
+	margin-right: 24px;
+
+
+
+	margin-top: 4px;
+
+
+
+}
+
+
+
+#content .alignright,
+
+
+
+#content img.alignright {
+
+
+
+	display: inline;
+
+
+
+	float: right;
+
+
+
+	margin-left: 24px;
+
+
+
+	margin-top: 4px;
+
+
+
+}
+
+
+
+#content .aligncenter,
+
+
+
+#content img.aligncenter {
+
+
+
+	clear: both;
+
+
+
+	display: block;
+
+
+
+	margin-left: auto;
+
+
+
+	margin-right: auto;
+
+
+
+}
+
+
+
+#content img.alignleft, 
+
+
+
+#content img.alignright, 
+
+
+
+#content img.aligncenter {
+
+
+
+	margin-bottom: 12px;
+
+
+
+}
+
+
+
+#content .wp-caption {
+
+
+
+	background: #f1f1f1;
+
+
+
+	line-height: 18px;
+
+
+
+	text-align: center;
+
+
+
+	margin-bottom: 20px;
+
+
+
+	padding: 4px;
+
+
+
+}
+
+
+
+#content .wp-caption img {
+
+
+
+	margin: 5px 5px 0;
+
+
+
+}
+
+
+
+#content .wp-caption p.wp-caption-text {
+
+
+
+	margin: 5px;
+
+
+
+	color: #888;
+
+
+
+	font-size: 12px;
+
+
+
+}
+
+
+
+#content .wp-smiley {
+
+
+
+	margin:0;
+
+
+
+}
+
+
+
+#content .gallery {
+
+
+
+	margin: auto;
+
+
+
+}
+
+
+
+#content .gallery .gallery-item {
+
+
+
+	float: left;
+
+
+
+	margin-top: 0;
+
+
+
+	text-align: center;
+
+
+
+	width: 33%;
+
+
+
+}
+
+
+
+#content .gallery img {
+
+
+
+	border: 2px solid #cfcfcf;
+
+
+
+}
+
+
+
+#content .gallery .gallery-caption {
+
+
+
+	color: #888;
+
+
+
+	font-size: 12px;
+
+
+
+	margin: 0 0 12px;
+
+
+
+}
+
+
+
+#content .gallery dl {
+
+
+
+	margin: 0;
+
+
+
+}
+
+
+
+#content .gallery img {
+
+
+
+	border: 10px solid #f1f1f1;
+
+
+
+}
+
+
+
+#content .gallery br+br {
+
+
+
+	display: none;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =Navigation
+
+
+
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+.navigation {
+
+
+
+	font-size:  12px;
+
+
+
+	line-height: 18px;
+
+
+
+	overflow: hidden;
+
+
+
+	color: #888;
+
+	clear:both;
+
+
+}
+
+
+
+.navigation a:link,
+
+
+
+.navigation a:visited {
+
+
+
+	color: #888;
+
+
+
+	text-decoration: none;
+
+
+
+}
+
+
+
+.navigation a:active,
+
+
+
+.navigation a:hover {
+
+
+
+	color: #000;
+
+
+
+}
+
+
+
+.nav-previous {
+
+
+
+	float: left;
+
+
+
+	width: 50%;
+
+
+
+}
+
+
+
+.nav-next {
+
+
+
+	float: right;
+
+
+
+	width: 50%;
+
+
+
+	text-align:right;
+
+
+
+}
+
+
+
+#nav-above {
+
+
+
+	margin: 0 0 18px 0;
+
+
+
+}
+
+
+
+#nav-above {
+
+
+
+	display: none;
+
+
+
+}
+
+
+
+.paged #nav-above,
+
+
+
+.single #nav-above {
+
+
+
+	display: block;
+
+
+
+}
+
+
+/* =Related
+------------------------------------------------------------- */
+#related {
+	font-size:12px;
+	width:100%;
+	clear:both;
+	margin:5px 0 15px 0;
+}
+
+#related h3 {
+	font-size:12px;
+	margin:5px 0 5px;	
+}
+
+#related a {
+	color:#444;	
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:none;
+}
+
+#related ol {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+#related li {
+	border-right:1px solid #dadada;
+	padding:6px 11px;
+	width:106px;
+	float:left;
+	height:160px;
+	display:inline
+}
+
+#related li.noPad {
+	padding-right:0;
+	border-right:none;	
+}
+
+#related img {
+	width:100px!important;
+	height:100px!important;
+	padding:2px;
+	border:1px solid #dadada;	
+}
+
+
+
+
+
+
+/* =Comments
+
+
+
+-------------------------------------------------------------- */
+
+
+
+#comments {
+
+
+
+	clear: both;
+
+
+
+}
+
+
+
+#comments .navigation {
+
+
+
+	padding: 0 0 18px 0;
+
+
+
+}
+
+
+
+h3#comments-title,
+
+
+
+h3#reply-title {
+
+
+
+	color: #000;
+
+
+
+	font-weight: bold;
+
+
+
+	font-size: 20px;
+
+
+
+	margin-bottom: 0;
+
+
+
+}
+
+
+
+h3#comments-title {
+
+
+
+	padding: 24px 0;
+
+
+
+}
+
+
+
+.commentlist {
+
+
+
+	list-style: none;
+
+
+
+	margin: 0;
+
+
+
+}
+
+
+
+.commentlist li.comment {
+
+
+
+	border-bottom: 1px solid #e7e7e7;
+
+
+
+	line-height: 24px;
+
+
+
+	margin: 0 0 24px 0;
+
+
+
+	padding: 0 0 0 56px;
+
+
+
+	position: relative;
+
+
+
+}
+
+
+
+.commentlist li:last-child {
+
+
+
+	border-bottom:none;
+
+
+
+	margin-bottom:0;
+
+
+
+}
+
+
+
+#comments .comment-body ul,
+
+
+
+#comments .comment-body ol {
+
+
+
+	margin-bottom: 18px;
+
+
+
+}
+
+
+
+#comments .comment-body p:last-child {
+
+
+
+	margin-bottom: 6px;
+
+
+
+}
+
+
+
+#comments .comment-body blockquote p:last-child {
+
+
+
+	margin-bottom: 24px;
+
+
+
+}
+
+
+
+.commentlist ol {
+
+
+
+	list-style: decimal;
+
+
+
+}
+
+
+
+.commentlist .avatar {
+
+
+
+	position: absolute;
+
+
+
+	top: 4px;
+
+
+
+	left: 0;
+
+
+
+}
+
+
+
+.comment-author {
+
+
+
+}
+
+
+
+.comment-author cite {
+
+
+
+	color: #000;
+
+
+
+	font-style: normal;
+
+
+
+	font-weight: bold;
+
+
+
+}
+
+
+
+.comment-author .says {
+
+
+
+	font-style: italic;
+
+
+
+}
+
+
+
+.comment-meta {
+
+
+
+	font-size: 12px;
+
+
+
+	margin: 0 0 18px 0;
+
+
+
+}
+
+
+
+.comment-meta a:link,
+
+
+
+.comment-meta a:visited {
+
+
+
+	color: #888;
+
+
+
+	text-decoration: none;
+
+
+
+}
+
+
+
+.comment-meta a:active,
+
+
+
+.comment-meta a:hover {
+
+
+
+	color: #000;
+
+
+
+}
+
+
+
+.commentlist .even {
+
+
+
+}
+
+
+
+.commentlist .bypostauthor {
+
+
+
+}
+
+
+
+.reply {
+
+
+
+	font-size: 12px;
+
+
+
+	padding: 0 0 24px 0;
+
+
+
+}
+
+
+
+.reply a,
+
+
+
+a.comment-edit-link {
+
+
+
+	color: #888;
+
+
+
+}
+
+
+
+.reply a:hover,
+
+
+
+a.comment-edit-link:hover {
+
+
+
+	color: #000;
+
+
+
+}
+
+
+
+.commentlist .children {
+
+
+
+	list-style: none;
+
+
+
+	margin: 0;
+
+
+
+}
+
+
+
+.commentlist .children li {
+
+
+
+	border: none;
+
+
+
+	margin: 0;
+
+
+
+}
+
+
+
+.nopassword,
+
+
+
+.nocomments {
+
+
+
+	display: none;
+
+
+
+}
+
+
+
+#comments .pingback {
+
+
+
+	margin-bottom: 18px;
+
+
+
+	padding-bottom: 18px;
+
+
+
+	border-bottom: 1px solid #e7e7e7;
+
+
+
+}
+
+
+
+.commentlist li.comment+li.pingback {
+
+
+
+	margin-top: -6px;
+
+
+
+}
+
+
+
+#comments .pingback p {
+
+
+
+	color: #888;
+
+
+
+	font-size: 12px;
+
+
+
+	line-height: 18px;
+
+
+
+	display:block;
+
+
+
+	margin: 0;
+
+
+
+}
+
+
+
+#comments .pingback .url {
+
+
+
+	font-style: italic;
+
+
+
+	font-size: 13px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Comments form */
+
+
+
+input[type=submit] {
+
+
+
+	color: #333;
+
+
+
+}
+
+
+
+#respond {
+
+
+
+	margin: 24px 0;
+
+
+
+	border-top: 1px solid #e7e7e7;
+
+
+
+	overflow: hidden;
+
+
+
+	position: relative;
+
+
+
+}
+
+
+
+#respond p {
+
+
+
+	margin: 0;
+
+
+
+}
+
+
+
+#respond .comment-notes {
+
+
+
+	margin-bottom: 1em;
+
+
+
+}
+
+
+
+.form-allowed-tags {
+
+
+
+	line-height: 1em;
+
+
+
+}
+
+
+
+.children #respond {
+
+
+
+	margin: 0 48px 0 0;
+
+
+
+}
+
+
+
+h3#reply-title {
+
+
+
+	margin: 18px 0;
+
+
+
+}
+
+
+
+#comments-list #respond {
+
+
+
+	margin: 0 0 18px 0;
+
+
+
+}
+
+
+
+#comments-list ul #respond {
+
+
+
+	margin: 0;
+
+
+
+}
+
+
+
+#cancel-comment-reply-link {
+
+
+
+	font-size: 12px;
+
+
+
+	line-height: 18px;
+
+
+
+	font-weight: normal;
+
+
+
+}
+
+
+
+#respond .required {
+
+
+
+	color:#000;
+
+
+
+	font-weight:bold;
+
+
+
+}
+
+
+
+#respond label {
+
+
+
+	color: #888;
+
+
+
+	font-size: 12px;
+
+
+
+}
+
+
+
+#respond input {
+
+
+
+	margin:0 0 9px;
+
+
+
+	width:98%;
+
+
+
+}
+
+
+
+#respond textarea {
+
+
+
+	width:98%;
+
+
+
+}
+
+
+
+#respond .form-allowed-tags {
+
+
+
+	color: #888;
+
+
+
+	font-size: 12px;
+
+
+
+	line-height: 18px;
+
+
+
+}
+
+
+
+#respond .form-allowed-tags code {
+
+
+
+	font-size: 11px;
+
+
+
+}
+
+
+
+#respond .form-submit {
+
+
+
+	margin: 12px 0;
+
+
+
+}
+
+
+
+#respond .form-submit input {
+
+
+
+	width: auto;
+
+
+
+	font-size: 14px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =Widget Areas
+
+
+
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+.widget-area ul {
+
+
+
+	list-style: none;
+
+
+
+	margin-left: 0;
+
+
+
+}
+
+
+
+.widget-area ul ul {
+
+
+
+	list-style: square;
+
+
+
+	margin-left: 1.3em;
+
+
+
+}
+
+
+
+.widget_search #s { /* This keeps the search inputs in line */
+
+
+
+	width: 60%;
+
+
+
+}
+
+
+
+.widget_search label {
+
+
+
+	display:none;
+
+
+
+}
+
+
+
+.widget-container {
+
+
+
+	margin: 0 0 18px 0;
+
+
+
+}
+
+
+
+.widget-title {
+
+
+
+	color: #222;
+
+
+
+	font-weight: bold;
+
+
+
+}
+
+
+
+.widget-area a:link,
+
+
+
+.widget-area a:visited {
+
+
+
+	text-decoration: none;
+
+
+
+}
+
+
+
+.widget-area a:active,
+
+
+
+.widget-area a:hover {
+
+
+
+	text-decoration: underline;
+
+
+
+}
+
+
+
+.widget-area .entry-meta {
+
+
+
+	font-size: 11px;
+
+
+
+}
+
+
+
+#wp_tag_cloud div {
+
+
+
+	line-height: 1.6em;
+
+
+
+}
+
+
+
+#wp-calendar {
+
+
+
+	width:100%;
+
+
+
+}
+
+
+
+#wp-calendar caption {
+
+
+
+	font-weight: bold;
+
+
+
+	color: #222;
+
+
+
+	text-align: left;
+
+
+
+	font-size:14px;
+
+
+
+	padding-bottom: 4px;
+
+
+
+}
+
+
+
+#wp-calendar thead {
+
+
+
+	font-size:11px;
+
+
+
+}
+
+
+
+#wp-calendar thead th {
+
+
+
+}
+
+
+
+#wp-calendar tbody {
+
+
+
+	color: #aaa;
+
+
+
+}
+
+
+
+#wp-calendar tbody td {
+
+
+
+	padding: 3px 0 2px;
+
+
+
+	background: #f5f5f5;
+
+
+
+	border:1px solid #fff;
+
+
+
+	text-align: center;
+
+
+
+}
+
+
+
+#wp-calendar tbody .pad {
+
+
+
+	background: none;
+
+
+
+}
+
+
+
+#wp-calendar tfoot #next {
+
+
+
+	text-align: right;
+
+
+
+}
+
+
+
+.widget_rss a.rsswidget {
+
+
+
+	color: #000;
+
+
+
+}
+
+
+
+.widget_rss a.rsswidget:hover {
+
+
+
+	color: #000;
+
+
+
+}
+
+
+
+.widget_rss .widget-title img {
+
+
+
+	height: 11px;
+
+
+
+	width: 11px;
+
+
+
+}
+
+
+
+
+
+
+
+/* Main sidebars */
+
+
+
+#main .widget-area ul {
+
+
+
+	margin-left: 0;
+
+
+
+	padding: 0 20px 0 0;
+
+
+
+}
+
+
+
+#main .widget-area ul ul {
+
+
+
+	border: none;
+
+
+
+	margin-left: 1.3em;
+
+
+
+	padding: 0;
+
+
+
+}
+
+
+
+#primary {
+
+
+
+}
+
+
+
+#secondary {
+
+
+
+}
+
+
+
+
+
+
+
+/* Footer widget areas */
+
+
+
+#footer-widget-area {
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =Footer
+
+
+
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+#footer {
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+#footer .ad {
+
+
+
+	margin:15px 0 0 0;	
+
+
+
+}
+
+
+
+
+
+
+
+img#wpstats {
+
+
+
+	display:block;
+
+
+
+	margin: 0 auto 10px;
+
+
+
+}
+
+
+
+
+
+
+
+#footerBottom {
+
+
+
+	background:#e7e7e7;
+
+
+
+	margin:12px 0 0 0;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+#footerBottom ul {
+
+
+
+	float:left;
+
+
+
+	margin:30px 0;
+
+
+
+	list-style:none;
+
+
+
+	padding:0;
+
+
+
+	width:100px
+
+
+
+}
+
+
+
+
+
+
+
+#footerBottom .left {
+
+
+
+	margin-left:135px;
+
+
+
+}
+
+
+
+
+
+
+
+#footerBottom .right {
+
+
+
+	margin-left:200px	
+
+
+
+}
+
+
+
+#footerBottom img {
+
+
+
+	float:left; 
+
+
+
+	width:185px;
+
+
+
+	margin:30px 0 0 170px
+
+
+
+}
+
+
+
+
+
+
+
+#footerBottom .right {
+
+
+
+	
+
+
+
+}
+
+
+
+
+
+
+
+/* =randoms
+
+
+
+-------------------------------------------------------------- */
+
+
+
+.clear {
+
+
+
+	clear:both;	
+
+
+
+}
+
+
+
+
+
+
+
+.gradientBody, .gradientBorderW, .gradientBorderN {
+
+
+
+	background:url(images/gradient1.gif) repeat;	
+
+
+
+}
+
+
+
+
+
+
+
+.gradientBorderW {
+
+
+
+	padding:10px	
+
+
+
+}
+
+
+
+
+
+
+
+.gradientBorderN {
+
+
+
+	padding:8px;	
+
+
+
+}
+
+
+
+
+
+
+
+.tallSpacer {
+
+
+
+	height:20px	
+
+
+
+}
+
+
+
+
+
+
+
+.ad {
+
+
+
+	background:#dadada	
+
+
+
+}
+
+
+
+
+
+
+
+.blueSpacer {
+
+
+
+	height:8px;
+
+
+
+	background:#09B1D8;
+
+
+
+}
+
+
+
+
+
+
+
+.blackSpacerSmall {
+
+
+
+	background:#000;
+
+
+
+	height:5px;
+
+
+
+	margin:8px 0
+
+
+
+}
+
+
+
+
+
+
+
+.grSpacerSmall {
+
+
+
+	margin:10px 0;
+
+
+
+	width:100%;
+
+
+
+	clear:both;
+
+
+
+	background:#bababa;
+
+
+
+	height:1px;
+
+
+
+}
+
+
+
+
+
+
+
+.cMoreLink {
+
+
+
+	padding:0 12px 0 4px;	
+
+
+
+	background:url(images/triangleEast.gif) no-repeat right;
+
+
+
+	font-size:11px;
+
+
+
+	letter-spacing:1px;
+
+
+
+	color:#bbb
+
+
+
+}
+
+
+
+
+
+
+
+.dialogTitleLg, .dialogTitleSm {
+
+
+
+	margin:0;
+
+
+
+	padding:7px 0 0 12px;	
+
+
+
+	background:url(images/quote.gif) no-repeat;
+
+
+
+	width:298px;
+
+
+
+	height:33px;
+
+
+
+	font-size:14px;
+
+
+
+}
+
+
+
+
+
+
+
+.dialogTitleSm {
+
+
+
+	width:285px;
+
+
+
+	background:url(images/quote-sm.gif) no-repeat;
+
+
+
+}
+
+
+
+
+
+
+
+.cCategory, .cCategory a {
+
+
+
+	color:#09B1D8;
+
+
+
+	font-family:"Times New Roman",Times,serif;
+
+
+
+	font-style:italic;
+
+
+
+	letter-spacing:1px;
+
+
+
+	line-height:15px;
+
+
+
+	text-transform:uppercase
+
+
+
+}
+
+
+
+
+
+
+
+.cAuthor, .cAuthor a {
+
+
+
+	color:#888;
+
+
+
+	font-size:11px;
+
+
+
+	letter-spacing:1px;
+
+
+
+	line-height:11px;		
+
+
+
+}
+
+
+
+
+
+
+
+.cAuthorDesc {
+
+
+
+	font-size:10px;
+
+
+
+	line-height:10px;
+
+
+
+}
+
+
+
+
+
+
+
+.author .cAuthorDesc {
+
+
+
+	font-size:12px
+
+
+
+}
+
+
+
+
+
+
+
+.cPostDate {
+
+
+
+	font-size:10px;
+
+
+
+	font-weight:700;
+
+
+
+}
+
+
+
+
+
+
+
+#linkwithin_logolink_0 b {visibility:hidden}
+
+
+
+
+
+
+
+/* Mobile Safari ( iPad, iPhone and iPod Touch )
+
+
+
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+pre {
+
+
+
+	-webkit-text-size-adjust: 140%;
+
+
+
+}
+
+
+
+code {
+
+
+
+	-webkit-text-size-adjust: 160%;
+
+
+
+}
+
+
+
+#access,
+
+
+
+.entry-meta,
+
+
+
+.entry-utility,
+
+
+
+.navigation,
+
+
+
+.widget-area {
+
+
+
+	-webkit-text-size-adjust: 120%;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =Print Style
+
+
+
+-------------------------------------------------------------- */
+
+
+
+
+
+
+
+@media print {
+
+
+
+	body {
+
+
+
+		background:none !important;
+
+
+
+	}
+
+
+
+	#wrapper {
+
+
+
+		float: none !important;
+
+
+
+		clear: both !important;
+
+
+
+		display: block !important;
+
+
+
+		position: relative !important;
+
+
+
+	}
+
+
+
+	#header {
+
+
+
+		border-bottom: 2pt solid #000;
+
+
+
+		padding-bottom: 18pt;
+
+
+
+		height:163px;
+
+	}
+
+
+
+	.entry-content {
+
+
+
+		font-size: 14pt;
+
+
+
+		line-height: 1.6em;
+
+
+
+	}
+
+
+
+	.entry-title {
+
+
+
+		font-size: 21pt;
+
+
+
+	}
+
+
+
+	#access,
+
+
+
+	#respond,
+
+
+
+	.comment-edit-link,
+
+
+
+	.edit-link,
+
+
+
+	.navigation,
+
+
+
+	.page-link,
+
+
+
+	.widget-area {
+
+
+
+		display: none !important;
+
+
+
+	}
+
+
+
+	#container,
+
+
+
+	#header,
+
+
+
+	#footer {
+
+
+
+		width: 100%;
+
+
+
+		margin: 0;
+
+
+
+	}
+
+
+
+	#content,
+
+
+
+	.one-column #content {
+
+
+
+		width: 100%;
+
+
+
+		margin: 24pt 0 0;
+
+
+
+	}
+
+
+
+	.wp-caption p {
+
+
+
+		font-size: 11pt;
+
+
+
+	}
+
+
+
+	img#wpstats {
+
+
+
+		display:none
+
+
+
+	}
+
+
+
+	#main {
+
+
+
+		display:inline;
+
+
+
+	}
+
+
+
+	.home .sticky {
+
+
+
+		border: none;
+
+
+
+	}
+
+
+
+}
+
+
+
